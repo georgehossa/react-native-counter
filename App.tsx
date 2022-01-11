@@ -1,8 +1,14 @@
 import React from 'react';
-import CounterScreen from './src/screens/CounterScreen';
+import { SafeAreaView } from 'react-native';
+// import CounterScreen from './src/screens/CounterScreen';
+import BoxObjectModelScreen from './src/screens/BoxObjectModelScreen';
 
 const App = () => {
-  return <CounterScreen />;
+  return (
+    <SafeAreaView style={{ flex: 1 }}>
+      <BoxObjectModelScreen />
+    </SafeAreaView>
+  );
 };
 
 export default App;
