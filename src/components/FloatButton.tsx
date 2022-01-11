@@ -14,7 +14,7 @@ interface FloatButtonProps {
   action: () => void;
 }
 
-const FloatButton = ({ title, action, position }: FloatButtonProps) => {
+const FloatButton = ({ title, action, position = 'BR' }: FloatButtonProps) => {
   const ios = () => (
     <TouchableOpacity
       style={[
